@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Result">
+
+
+    <TextView
+        android:id="@+id/tituloTabela"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="IMC"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/saudavelTXT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloTXT"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/magresaTXT"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Menor que 18,5                    Magresa"
+        android:textAlignment="viewStart"
+        android:textColor="#191717"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloTXT" />
+
+    <TextView
+        android:id="@+id/saudavelTXT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:text="18,5 a 24,9                            Saudável"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloTabela" />
+
+    <TextView
+        android:id="@+id/sobrepesoTXT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#8BC34A"
+        android:text="25,0 a29,9                             Sobrepeso"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/obes1TXT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saudavelTXT" />
+
+    <TextView
+        android:id="@+id/obes1TXT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:text="30,0 a 34,9                            Obesidade de grau 1"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sobrepesoTXT"
+        tools:targetApi="ice_cream_sandwich" />
+
+    <TextView
+        android:id="@+id/obes2TXT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:text="35,0 a 39,9                            Obesidade de grau 2"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obes1TXT"
+        tools:targetApi="ice_cream_sandwich" />
+
+    <TextView
+        android:id="@+id/obesgraveTXT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#F44336"
+        android:text="Maior que 40,0                     Obesidade grave"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obes2TXT"
+        tools:targetApi="ice_cream_sandwich" />
+
+    <Button
+        android:id="@+id/voltarBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Voltar"
+        android:textColor="#150101"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obes2TXT" />
+
+    <TextView
+        android:id="@+id/tituloTXT"
+        android:layout_width="400dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="88dp"
+        android:textAlignment="center"
+        android:textColor="#0B0000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

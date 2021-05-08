@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/pesoEDT"
+        android:layout_width="260sp"
+        android:layout_height="35dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/background_light"
+        android:hint="@string/peso_hint"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/alturaEDT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloTXT" />
+
+    <EditText
+        android:id="@+id/alturaEDT"
+        android:layout_width="260sp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:background="@android:color/background_light"
+        android:hint="@string/altura_hint"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pesoEDT" />
+
+    <Button
+        android:id="@+id/calcularBTN"
+        android:layout_width="127dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="80dp"
+        android:background="#8BC34A"
+        android:text="Calcular IMC"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alturaEDT" />
+
+    <TextView
+        android:id="@+id/tituloTXT"
+        android:layout_width="399dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="75dp"
+        android:textAlignment="center"
+        android:textColor="#0C0000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
